@@ -1,6 +1,6 @@
 # CPU-Z Report Scrubber
 
-CPU-Z reports are shared when someone asks for help with a PC (or wants to share their hardware specs with another PC user). A report also contains serial numbers, a system UUID, monitor and disk serials, and sometimes a device path that identifies that one computer. This program writes a copy with those values removed so the hardware details can be posted without handing out those identifiers.
+CPU-Z ([official CPU-Z page](https://www.cpuid.com/softwares/cpu-z.html)) reports are shared when someone asks for help with a PC (or wants to effortlessly share their hardware specs with another PC user). A report also contains serial numbers, a system UUID, monitor and disk serials, and sometimes a device path that identifies that one computer. This program writes a copy with those values removed so the hardware details can be posted without handing out those identifiers.
 
 The original file is left untouched. Share the sanitized copy. Keep the scrub log on your machine: it lists every original value that was removed by this program.
 
@@ -20,7 +20,7 @@ If you have the standalone executable (`scrubber.exe` on Windows):
 
 Closing the file window without choosing a file writes nothing. Running the program again replaces the previous sanitized copy and scrub log.
 
-NOTE: If the report file name is the computer name, rename the sanitized copy before you post it. The program does not rename files.
+**NOTE**: If the report file name is the computer name, rename the sanitized copy before you post it. The program does not rename files.
 
 ---
 
