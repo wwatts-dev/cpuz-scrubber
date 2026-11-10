@@ -59,6 +59,14 @@ Text reports separate the label and the value with tabs, and Windows often saves
 
 ---
 
+## Reporting a Bad Scrub
+
+GitHub issues are public. Do not attach the scrub log, the original report, or real serials, UUIDs, or names. Paste the sanitized line, or the error text.
+
+[Open a bug report](https://github.com/wwatts-dev/cpuz-scrubber/issues/new?template=bug_report.yml)
+
+---
+
 ## License
 
 Distributed under the MIT license. See `LICENSE` for details.

@@ -1,0 +1,86 @@
+name: Bad scrub or bug
+description: A value was left in, a value was removed by mistake, or the program crashed.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        GitHub issues are public. Do not paste the scrub log, the original report, real serials, UUIDs, names, or account identifiers. Paste the sanitized line, or the error text with those values removed.
+  - type: dropdown
+    id: how-ran
+    attributes:
+      label: How you ran it
+      options:
+        - scrubber.exe
+        - Python (scrubber.py)
+        - Not sure
+    validations:
+      required: true
+  - type: dropdown
+    id: report-type
+    attributes:
+      label: Report type
+      options:
+        - .txt
+        - .html
+        - .htm
+        - Not sure
+    validations:
+      required: true
+  - type: dropdown
+    id: problem
+    attributes:
+      label: What went wrong
+      options:
+        - A value that should have been removed was left in
+        - A value that should have stayed was removed
+        - The program crashed or showed an error
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: cpuz-version
+    attributes:
+      label: CPU-Z version
+      description: Help, About in CPU-Z. Leave blank if you do not know.
+      placeholder: 2.10
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+      description: Name the field (for example, a disk serial) without the real value.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Sanitized line or error text
+      description: Paste the sanitized line, or the error text. Remove any real serial, UUID, name, or path first.
+      placeholder: Serial Number      [SCRUBBED_SERIAL]
+    validations:
+      required: true
+  - type: input
+    id: python-version
+    attributes:
+      label: Python version
+      description: Only if you ran scrubber.py.
+      placeholder: 3.12
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating system
+      options:
+        - Windows
+        - Linux
+        - macOS
+        - Other
+    validations:
+      required: false
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Privacy
+      options:
+        - label: This issue is public. I am not including the scrub log, the original report, or real serials, UUIDs, names, or account identifiers.
+          required: true
