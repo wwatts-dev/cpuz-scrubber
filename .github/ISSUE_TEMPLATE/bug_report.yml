@@ -22,9 +22,9 @@ body:
     attributes:
       label: Report type
       options:
-        - .txt
-        - .html
-        - .htm
+        - ".txt"
+        - ".html"
+        - ".htm"
         - Not sure
     validations:
       required: true
@@ -44,7 +44,7 @@ body:
     attributes:
       label: CPU-Z version
       description: Help, About in CPU-Z. Leave blank if you do not know.
-      placeholder: 2.10
+      placeholder: "2.10"
   - type: textarea
     id: expected
     attributes:
@@ -57,7 +57,7 @@ body:
     attributes:
       label: Sanitized line or error text
       description: Paste the sanitized line, or the error text. Remove any real serial, UUID, name, or path first.
-      placeholder: Serial Number      [SCRUBBED_SERIAL]
+      placeholder: "Serial Number      [SCRUBBED_SERIAL]"
     validations:
       required: true
   - type: input
@@ -65,7 +65,7 @@ body:
     attributes:
       label: Python version
       description: Only if you ran scrubber.py.
-      placeholder: 3.12
+      placeholder: "3.12"
   - type: dropdown
     id: os
     attributes:
@@ -75,8 +75,6 @@ body:
         - Linux
         - macOS
         - Other
-    validations:
-      required: false
   - type: checkboxes
     id: privacy
     attributes:
